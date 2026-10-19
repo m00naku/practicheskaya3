@@ -1,3 +1,11 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 @use 'base';
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: #eee;
+}
