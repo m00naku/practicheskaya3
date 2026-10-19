@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+body {
+  margin: 0;
+  font-family: $font-main;
+  color: $color-text;
+  user-select: none;
+}
