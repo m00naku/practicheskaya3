@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.page-title {
+  margin: 0 0 24px;
+  padding-left: 24px;
+  border-left: 6px solid $color-mint;
+  font-size: 40px;
+  font-weight: 800;
+}

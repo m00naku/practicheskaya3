@@ -1,26 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуги и сервисы</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>my-app</title>
-</head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <button class="round-btn" aria-label="Меню">
+          <img src="/src/assets/img/icon-menu.svg" alt="" />
+        </button>
+        <img class="header__logo" src="/src/assets/img/logo.svg" alt="CPS" />
 
-<body>
+        <div class="header__contacts">
+          <button class="round-btn">
+            <img src="/src/assets/img/icon-phone.svg" alt="Позвонить" />
+          </button>
+          <button class="round-btn">
+            <img src="/src/assets/img/icon-chat.svg" alt="Чат" />
+          </button>
+          <button class="round-btn">
+            <img src="/src/assets/img/icon-user.svg" alt="Профиль" />
+          </button>
+        </div>
 
-  <div class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Слайд 1</div>
-      <div class="swiper-slide">Слайд 2</div>
-      <div class="swiper-slide">Слайд 3</div>
+        <div class="header__actions">
+          <a class="action" href="#">
+            <span class="action__label">Оставить заявку</span>
+            <span class="round-btn"
+              ><img src="/src/assets/img/icon-repair.svg" alt=""
+            /></span>
+          </a>
+          <a class="action" href="#">
+            <span class="action__label">Статус ремонта</span>
+            <span class="round-btn"
+              ><img src="/src/assets/img/icon-status.svg" alt=""
+            /></span>
+          </a>
+        </div>
+      </header>
+
+      <main class="content">
+        <h1 class="page-title">Услуги и сервисы</h1>
+
+        <nav class="tabs">
+          <a class="tabs__item tabs__item--active" href="#"
+            >Ремонтируемые бренды</a
+          >
+          <a class="tabs__item" href="#">Ремонтируемые устройства</a>
+          <a class="tabs__item" href="#">Цены на услуги</a>
+          <a class="tabs__item" href="#">Адреса сервисных центров</a>
+          <a class="tabs__item" href="#">Специальные цены</a>
+          <a class="tabs__item" href="#">Отзывы</a>
+        </nav>
+
+        <section class="about">
+          <div class="about__text">
+            <p>
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p>
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+            </p>
+            <a class="more" href="#">
+              <img
+                class="more__icon"
+                src="/src/assets/img/icon-chevron.svg"
+                alt=""
+              />
+              Читать далее
+            </a>
+          </div>
+          <img
+            class="about__image"
+            src="/src/assets/img/about.jpg"
+            alt="Вывеска CPS"
+          />
+        </section>
+      </main>
     </div>
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-  <script type="module" src="/src/js/main.js"></script>
-</body>
 
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>

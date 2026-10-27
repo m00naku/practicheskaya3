@@ -1,0 +1,47 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.content {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 24px;
+  background: $color-page;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+
+  @include tablet {
+    gap: 24px;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.6;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-height: 420px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: $color-text;
+  text-decoration: none;
+}

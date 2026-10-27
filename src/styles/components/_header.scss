@@ -1,0 +1,63 @@
+@use '../variables' as *;
+
+.round-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border: 0;
+  border-radius: 50%;
+  background: $color-pink;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background: $color-page;
+
+  &__logo {
+    height: 56px;
+  }
+
+  &__contacts {
+    display: none;
+    gap: 16px;
+    margin-left: auto;
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: $color-text;
+  text-decoration: none;
+
+  &__label {
+    display: none;
+    font-size: 20px;
+
+    @media (min-width: 1025px) {
+      display: block;
+    }
+  }
+}

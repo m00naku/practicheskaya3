@@ -1,8 +1,19 @@
 @use 'variables' as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: $font-main;
   color: $color-text;
-  user-select: none;
+  background: $color-bg;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
