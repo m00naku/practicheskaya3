@@ -3,7 +3,17 @@
 .page-title {
   margin: 0 0 24px;
   padding-left: 24px;
-  border-left: 6px solid $color-mint;
   font-size: 40px;
   font-weight: 800;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    margin-right: 16px;
+    background: $color-mint;
+    left: 0;
+  }
 }

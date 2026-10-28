@@ -24,6 +24,21 @@
     height: 56px;
   }
 
+  &__divider {
+    flex-shrink: 0;
+    width: 2px;
+    height: 40px;
+    background: #dcdcdc;
+
+    &--actions {
+      margin-left: auto;
+
+      @media (min-width: 601px) and (max-width: 1024px) {
+        margin-left: 0;
+      }
+    }
+  }
+
   &__contacts {
     display: none;
     gap: 16px;
@@ -37,11 +52,6 @@
   &__actions {
     display: flex;
     gap: 16px;
-    margin-left: auto;
-
-    @media (min-width: 601px) and (max-width: 1024px) {
-      margin-left: 0;
-    }
   }
 }
 

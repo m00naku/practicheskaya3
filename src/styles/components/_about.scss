@@ -2,9 +2,7 @@
 @use '../mixins' as *;
 
 .content {
-  max-width: $container-width;
-  margin: 0 auto;
-  padding: 24px;
+  padding: 40px;
   background: $color-page;
 }
 
